@@ -18,7 +18,7 @@ body {
 }
 
 a{
-  color: #252525;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -208,15 +208,14 @@ a{
     }
   }
 
-  &-moreBtn{
+  &-moreBtn.card.p-3.text-center{
     background-color: #b79f6d!important;
-    color: #ffffff;
+    color: #fff!important;
+    text-shadow: 0 1px 2px #5f5137;
 
     &:hover{
       background-color: #927f59!important;
-      color: #ffffff;
-      text-decoration: none;
-      text-shadow: 0 1px 2px #5f5137;
+      text-decoration: none;      
     }
   }
  

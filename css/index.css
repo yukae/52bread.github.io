@@ -14,7 +14,7 @@ body {
   background-color: #fff; }
 
 a {
-  color: #252525;
+  color: #fff;
   text-decoration: none; }
 
 .wrapper-index-btn:hover {
@@ -144,14 +144,13 @@ a {
           color: #fff !important;
           text-shadow: 0 1px 1px #251900;
           text-decoration: none; }
-  .card-box-moreBtn {
+  .card-box-moreBtn.card.p-3.text-center {
     background-color: #b79f6d !important;
-    color: #ffffff; }
-    .card-box-moreBtn:hover {
+    color: #fff !important;
+    text-shadow: 0 1px 2px #5f5137; }
+    .card-box-moreBtn.card.p-3.text-center:hover {
       background-color: #927f59 !important;
-      color: #ffffff;
-      text-decoration: none;
-      text-shadow: 0 1px 2px #5f5137; }
+      text-decoration: none; }
 
 .jumbotron {
   background-image: url("https://scontent.ftpe8-3.fna.fbcdn.net/v/t1.0-9/11990431_10204848205873014_1721610792969398900_n.jpg?_nc_cat=0&oh=7142bda7d58dc7a8bd6966d01e31afc2&oe=5BF2C5FD");
