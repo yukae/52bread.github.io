@@ -1,0 +1,255 @@
+@charset "UTF-8";
+@import url(global.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+.text-yellow{
+  color: #b79f6d;
+}
+
+html {
+  font-size: 20px; }
+
+body {
+  font-family: 'Raleway', "cwTeXYen", sans-serif;
+  color: #252525;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff; 
+}
+
+a{
+  color: #252525;
+  text-decoration: none;
+}
+
+.wrapper{
+
+  &-index-btn{
+
+    &:hover{
+      color: #252525;
+    }
+
+    &:focus{
+      color: #252525;
+    }
+  }
+
+  &-logo{
+    display: block;
+    width: 6rem;
+    height: 2rem;
+    background-image: url("../image/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    text-indent: -9999rem;
+  }
+
+  &-nav-btn{
+    color: #6c757d;
+
+    &:hover{
+      color: #444;
+    }
+  }
+
+  &-ad{
+    width: 100%;
+    height: 90vh;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+
+    &-btnBg::before{
+        background-color: rgba(0, 0, 0, .7);
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &-tag{
+      text-align: right;
+      width: 17%;
+      position: absolute;
+      top: 38%;
+      right: 2%;
+      background-size: cover;
+
+      &-title{
+        font-size: 5rem;
+      }
+
+      &-text{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: justify;
+      }
+    }
+  }
+
+  &-photo{
+    line-height: 2rem;
+    color: #fff;
+    background-color: #0c5460;
+
+    &-btn{
+      margin-top: 2rem;
+      background-color: #bdae8c;
+      color: #fff;
+      text-shadow: 1px 1px 1px #191100;
+      border: 0;
+      width: 10rem;
+
+      &:hover{
+        color: #fff;
+        background-color: #9e8b5f;
+      }
+    }
+
+    &-list{
+      width: 95%;
+      margin: 2rem auto;
+      line-height: 1.5rem;
+
+      &-card{
+        margin-bottom: 1rem;
+
+        &-bg{
+          background-color: #f7f7f7;
+          color: #00202b;
+          text-shadow: 0 1px 1px #ffffff;
+          box-shadow: 2px 2px 17px #001a1f;
+        }
+      }
+    }
+  }
+
+  &-input{
+    padding: 0 2rem;
+
+    &-content{
+      color: #6f6f6f;
+      margin: 1.5rem 0;
+
+      &-title{
+        font-size: 3rem;
+        line-height: 6rem;
+      }
+
+      &-btn{
+        font-size: 1.5rem;
+        line-height: 3rem;
+      }
+
+      &-text{
+        color: #655d4c;
+        font-size: 1.2rem;
+        font-style: italic;
+      }
+    }
+  }
+
+  &-footer{
+    text-align: center;
+    font-size: .8rem;
+    color: #bdae8c;
+    line-height: 3rem;
+    border-top: 1px solid #f1f1f1;
+    margin-top: 3rem;
+  }
+  
+}
+
+.navFixed {
+  z-index: 10;          
+  position: fixed;      
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  min-width: 100%;
+  opacity: 0.94;
+  transition: opacity .5s ease-out;   
+}
+
+.card-box{
+    padding: 2% 5%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #f1eadb;
+
+  &-bg{
+    background-color: #fffefb;
+
+    &-sText{
+      font-size: 1rem;
+    }
+
+    &-bm{
+      margin-bottom: 1.5rem!important;
+
+      &-btn{
+        display: block;
+        width: 7rem;
+        height: 2rem;
+        text-align: center;
+        border: 1px solid #c1973b;
+        border-radius: 1rem;
+        color: #c1973b!important;
+        font-size: 1rem;
+        line-height: 2rem;
+        position: absolute;
+        right: 1rem;
+
+        &:hover{
+          background-color: #c1973b;
+          color: #fff!important;
+          text-shadow: 0 1px 1px #251900;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &-moreBtn{
+    background-color: #b79f6d!important;
+    color: #ffffff;
+
+    &:hover{
+      background-color: #927f59!important;
+      color: #ffffff;
+      text-decoration: none;
+      text-shadow: 0 1px 2px #5f5137;
+    }
+  }
+ 
+}
+
+.jumbotron{
+  background-image: url("https://scontent.ftpe8-3.fna.fbcdn.net/v/t1.0-9/11990431_10204848205873014_1721610792969398900_n.jpg?_nc_cat=0&oh=7142bda7d58dc7a8bd6966d01e31afc2&oe=5BF2C5FD");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  widows: 100%;
+  height: 100%;
+
+}
+
+@media (max-width: 992px){
+  .wrapper-ad{
+    height: auto;
+  }
+
+  .wrapper-ad-tag{
+    position: relative;
+    width: 95%;
+    text-align: left;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px){
+  .navbar-expand-lg .navbar-nav{
+    position: absolute;
+    right: 0;
+  }
+}
