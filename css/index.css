@@ -14,7 +14,6 @@ body {
   background-color: #fff; }
 
 a {
-  color: #fff;
   text-decoration: none; }
 
 .wrapper-index-btn:hover {
@@ -49,13 +48,15 @@ a {
     position: absolute;
     top: 38%;
     right: 2%;
-    background-size: cover; }
+    background-size: cover;
+    color: #c1973b; }
     .wrapper-ad-tag-title {
       font-size: 5rem; }
     .wrapper-ad-tag-text {
       font-size: 1rem;
       line-height: 1.5rem;
-      text-align: justify; }
+      text-align: justify;
+      color: #585858; }
 .wrapper-photo {
   line-height: 2rem;
   color: #fff;
