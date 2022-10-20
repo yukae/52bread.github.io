@@ -259,19 +259,4 @@ a {
     right: 0;
   }
 }
-
-@media (max-width: 570px) {
-  .animation {
-    -webkit-transform: translateX(5rem);
-            transform: translateX(5rem);
-    -webkit-transition: -webkit-transform 700ms ease-in;
-    transition: -webkit-transform 700ms ease-in;
-    transition: transform 700ms ease-in;
-    transition: transform 700ms ease-in, -webkit-transform 700ms ease-in;
-  }
-  .show {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
 /*# sourceMappingURL=index.css.map */
