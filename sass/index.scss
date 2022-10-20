@@ -18,7 +18,7 @@ body {
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none!important;
 }
 
 .wrapper{
@@ -72,7 +72,7 @@ a{
       right: 2%;
       background-size: cover;
       color: #c1973b;
-
+      
       &-title{
         font-size: 5rem;
       }
@@ -232,6 +232,15 @@ a{
 
 }
 
+.animation{
+  transform: translateY(5rem);
+  transition: transform 700ms ease-in;
+}
+
+.show{
+  transform: translate(0);
+}
+
 @media (max-width: 992px){
   .wrapper-ad{
     height: auto;
@@ -245,11 +254,22 @@ a{
     right: 0;
     margin: 0 auto;
   }
+
 }
 
 @media (min-width: 992px){
   .navbar-expand-lg .navbar-nav{
     position: absolute;
     right: 0;
+  }
+}
+
+@media (max-width: 570px){
+  .animation{
+    transform: translateX(5rem);
+    transition: transform 700ms ease-in;
+  }
+  .show{
+    transform: translate(0);
   }
 }
